@@ -45,7 +45,7 @@ class MangaGoTest {
   }
   // loop through lists and compare
   async four() {
-    let myList = "2359589";
+    let myList = "123";
     let toCompare = "inso_s_law";
     let number1 = 1;
     let number2 = 2;
@@ -128,7 +128,7 @@ function getOneRecList(htmlString) {
   return recLists;
 }
 
-// input: 2359589
+// input: 123
 async function getListData(LIST_ID) {
   let firstPage = await getHTML(
     `https://www.mangago.me/home/mangalist/${LIST_ID}`
@@ -153,7 +153,7 @@ async function getListData(LIST_ID) {
     return _.flattenDeep(data);
   }
 }
-// input: html of https://www.mangago.me/home/mangalist/2359589 / page whatever
+// input: html of https://www.mangago.me/home/mangalist/123 / page whatever
 function getOnePage(htmlString) {
   const mangas = [];
   const $ = cheerio.load(htmlString);
